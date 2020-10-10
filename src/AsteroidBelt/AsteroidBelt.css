@@ -1,0 +1,100 @@
+.asteroid-container{
+    padding: 20px;
+    background-color: var(--table-background);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.asteroid-container th{
+    text-align: left;
+    padding: 0 10px;
+    color: var(--table-heading-color);
+}
+.asteroid-container td {
+    padding: 20px 10px;
+}
+.asteroid-container td>a{
+    text-decoration: none;
+    color: grey;
+}
+.asteroid-container tr{
+    background-color: var(--white);
+    border-radius: 10px;
+    border-top: 14px solid var(--table-background);
+}
+.asteroid-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.search-filter{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+}
+.search-id{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search-id input{
+    border: none;
+    padding: 14px 20px;
+    min-width: 300px;
+    border-radius: 8px;
+}
+.search-id img{
+    width: 23px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+.search-id input::placeholder{
+    color: var(--search--search-placeholder-placeholder);
+}
+.search-dates{
+    display: flex;
+    position: relative
+}
+.search-dates input{
+    border: none;
+    padding: 14px 20px;
+    min-width: 200px;
+    margin: 0 5px;
+    border-radius: 8px;
+}
+.search-dates img{
+    width: 23px;
+    cursor: pointer;
+}
+.search-dates input::placeholder{
+    color: var(--search--search-placeholder-placeholder);
+}
+.cross-icon{
+    width: 16px;
+    position: relative;
+    right: 11.5rem;
+    cursor: pointer;
+}
+.date-range-message{
+    display: flex;
+    flex-direction: column;
+}
+.date-range-message span{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--table-heading-color);
+    margin: 5px 0 0 5px;
+}
+.search-dates .dismiss-date{
+    height: 14px;
+    position: absolute;
+    right: -20px;
+    top: 22%;
+}
+.no-record-found{
+    color: var(--search-placeholder);
+    width: 100%;
+    text-align: center;
+}
